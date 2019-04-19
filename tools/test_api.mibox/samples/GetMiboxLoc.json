@@ -1,0 +1,11 @@
+{
+ "sn":"3",
+ "cmd":"GetMiboxLoc",   
+ "token":"8dcef9f33924e9698c92baae551114ec",
+ "devSn":"db00-0050-9600-0768",
+ "ssid":"AiU-436",
+ "beginTime":"2016-10-01",
+ "endTime":"2016-10-31",
+ "order":"ASC",
+ "count":"1"
+}

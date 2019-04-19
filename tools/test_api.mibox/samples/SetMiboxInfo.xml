@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simsrv version="1.0" msg_type="request">
+    <header>
+        <param name="SN" value="0" />
+        <param name="Domain" value="oss-cn-4G" />
+        <param name="User" value="apiuser" />
+        <param name="Cmd" value="SetMiboxInfo" />
+        <param name="Retries" value="0" />
+        <param name="Timeout" value="5000" />
+        <param name="Timestamp" value="NA" />
+        <param name="AuthInfo" value="NA" />
+    n</header>
+    <SetMiboxInfo>
+        <param name="DeviceSn" value="db02-6715-0100-1539" />
+        <param name="OrderControl" value="0" />
+    </SetMiboxInfo>
+</simsrv>

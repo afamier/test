@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simsrv version="1.0" msg_type="request">
+    <header>
+        <param name="SN" value="0" />
+        <param name="Domain" value="default" />
+        <param name="User" value="apiuser" />
+        <param name="Cmd" value="GetTrapInfo" />
+        <param name="Retries" value="0" />
+        <param name="Timeout" value="5000" />
+        <param name="Timestamp" value="NA" />
+        <param name="AuthInfo" value="NA" />
+    </header>
+    <GetTrapInfo>
+    </GetTrapInfo>
+</simsrv>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simsrv version="1.0" msg_type="request">
+    <header>
+        <param name="SN" value="1" />
+        <param name="Domain" value="default" />
+        <param name="User" value="apiuser" />
+        <param name="Cmd" value="GetMiboxStats" />
+        <param name="Retries" value="0" />
+        <param name="Timeout" value="5000" />
+        <param name="Timestamp" value="NA" />
+        <param name="AuthInfo" value="NA" />
+    </header>
+    <GetMiboxStats>
+        <param name="DeviceSn" value="DB00-0050-1100-0440" />
+        <param name="PortType" value="GWP" />
+        <param name="PortNo" value="0" />
+        <param name="BeginTime" value="2015-6-26 00:00:00" />
+        <param name="EndTime" value="2015-6-26 23:59:59" />
+    </GetMiboxStats>
+</simsrv>

@@ -1,0 +1,10 @@
+{
+ "sn":"3",
+ "cmd":"SendSmsByBill",   
+ "token":"e85edb15b63f23b20bddf0746bc471f6",
+ "billId":"ofpay050",
+ "dstNo":"+8618507955885",
+ "content":"hello!test050",
+ "notify":"2",
+ "sign":""
+}

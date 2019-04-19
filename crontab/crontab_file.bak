@@ -1,0 +1,10 @@
+# crontab schedule file
+
+# UTC: 21:08 for Eastern Servers, Beijing: 05:08
+# UTC: 05:08 for Western Servers
+# minute hour day month week cmd
+  8      21   *   *     *    /cloudenv/crontab/crontab_task_day.sh
+
+# minute hour day month week cmd
+  */1    *    *   *     *    /cloudenv/crontab/crontab_task_minute.sh
+

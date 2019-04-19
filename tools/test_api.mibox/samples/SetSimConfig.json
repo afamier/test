@@ -1,0 +1,7 @@
+{
+ "sn":"3",
+ "cmd":"SetSimConfig",   
+ "token":"e85edb15b63f23b20bddf0746bc471f6",
+ "daySmsLimit":"10",
+ "simId":["12670"]
+}

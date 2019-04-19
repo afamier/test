@@ -1,0 +1,7 @@
+{
+ "sn":"125",
+ "cmd":"SetFreeFlow",   
+ "token":"c7f4e65f571b52336c0e4a7da4ed7ed8",
+ "version":"v1",
+ "value":"172.16.0.188,54.255.254.16"
+}

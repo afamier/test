@@ -1,0 +1,107 @@
+#!/bin/sh
+#chkconfig: 345 85 85
+#description: dinstar simserver service
+#notes: "don't delete above lines, which is reserved for chkconfig usage"
+
+# 12.04, 14.04, 16.04
+RELEASE=`lsb_release -r|cut -f 2`
+# i386, x86_64
+ARCH=`uname -i`
+
+###### main() ######
+# check user role
+ROLE=`id | awk '{print $1}' | sed -e 's/=/ /' -e 's/(/ /' -e 's/)/ /' |awk '{print $3}'`
+if [ "${ROLE}" != "root" ]; then
+    echo "[ERROR]Operation not permitted! Please run cmd by root, or sudo cmd ..."
+    exit 1
+fi
+
+SIMSRV_BIN="/dinstar/bin/simsrv"
+DAEMON_BIN="simsafe"
+SYSLOG_BIN="syslog-ng"
+UDP_ECHO_SERVER_BIN="udp_echo_server"
+APP_RESTUND_BIN="restund"
+DNS_BIN="bind9"
+MYSQL_BIN="mysql"
+
+if  [ "$RELEASE" = "12.04" ]
+then
+    WEBAPPS_BIN="tomcat6"
+elif [ "$RELEASE" = "14.04" ]
+then
+    WEBAPPS_BIN="tomcat6"
+elif [ "$RELEASE" = "16.04" ]
+then
+    WEBAPPS_BIN="tomcat7"
+fi
+
+retval=0
+
+do_status()
+{
+    local tempvar=""
+
+    ### 1. daemon
+    tempvar="`ps ax -opid,cmd | grep -v grep | grep $DAEMON_BIN`"
+    ###echo "current check pid: $tempvar"
+    if [ -z "$tempvar" ]; then
+      echo "simserver daemon               : not running!"
+    else
+      echo "simserver daemon               : is running"
+    fi
+
+    ### 2. app
+    tempvar="`ps ax -opid,cmd | grep -v grep | grep $SIMSRV_BIN`"
+    ###echo "current simsrv pid: $tempvar"
+    if [ -z "$tempvar" ]; then
+      echo "simserver app                  : not running!"
+    else
+      echo "simserver app                  : is running"
+    fi
+
+    ### 3. webapps
+    tempvar="`service $WEBAPPS_BIN status | grep "is running"`"
+    ###echo "current check pid: $tempvar"
+    if [ -z "$tempvar" ]; then
+      echo "simserver webapps              : not running!"
+    else
+      echo "simserver webapps              : is running"
+    fi
+
+    ### 4. dns
+    tempvar="`service $DNS_BIN status | grep "is running"`"
+    ###echo "current check pid: $tempvar"
+    if [ -z "$tempvar" ]; then
+      echo "simserver dns                  : not running!"
+    else
+      echo "simserver dns                  : is running"
+    fi
+}
+
+case $1 in
+'start')
+        echo "Starting simserver"
+        /dinstar/bin/start_app.sh
+        ;;
+'stop')
+        echo "Stopping simserver"
+        /dinstar/bin/stop_app.sh
+        ;;
+'restart')
+        echo "Restart simserver"
+        /dinstar/bin/stop_app.sh
+        echo "wait 15 seconds to restart..."
+        sleep 15
+        /dinstar/bin/start_app.sh
+        ;;
+'status')
+        echo "Show status of simserver:"
+        do_status
+        ;;
+*)
+        echo "usage: service simserver {start|stop|restart|status}"
+        ;;
+esac
+
+exit $retval
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simsrv version="1.0" msg_type="request">
+    <header>
+        <param name="SN" value="0" />
+        <param name="Domain" value="mibox" />
+        <param name="User" value="apiuser" />
+        <param name="Cmd" value="SetMiboxAction" />
+        <param name="Retries" value="0" />
+        <param name="Timeout" value="5000" />
+        <param name="Timestamp" value="NA" />
+        <param name="AuthInfo" value="NA" />
+    </header>
+    <SetMiboxAction>
+        <param name="DeviceSn" value="2014-0423-1807-0001" />
+        <param name="ActionStatus" value="REBOOT" />
+    </SetMiboxAction>
+</simsrv>

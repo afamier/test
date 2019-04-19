@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simsrv version="1.0" msg_type="request">
+    <header>
+        <param name="SN" value="1" />
+        <param name="Domain" value="mibox" />
+        <param name="User" value="apiuser" />
+        <param name="Cmd" value="GetMiboxDdr" />
+        <param name="Retries" value="0" />
+        <param name="Timeout" value="5000" />
+        <param name="Timestamp" value="NA" />
+        <param name="AuthInfo" value="NA" />
+    </header>
+    <GetMiboxDdr>
+        <param name="DeviceSn" value="2014-0423-1807-0001" />
+        <param name="BeginTime" value="2014-10-28 00:00:00" />
+        <param name="EndTime" value="2014-10-28 23:59:59" />
+        <param name="BeginDataSn" value="0" />
+        <param name="Order" value="ASC" />
+        <param name="MaxGetCount" value="8" />
+    </GetMiboxDdr>
+</simsrv>

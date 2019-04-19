@@ -1,0 +1,8 @@
+{
+ "sn":"1",
+ "cmd":"CreateToken",   
+ "domain":"ofpay",
+ "user":"apiuser",
+ "time":"2016-12-17 08:30:00",
+ "hash":"6CE6F0A1414790005FE75D0EB5809142"
+}

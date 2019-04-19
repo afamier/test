@@ -1,0 +1,9 @@
+{
+ "sn":"122",
+ "cmd":"SetMiboxWifi",   
+ "token":"5cc0426fc4cb5fe51138968d2b5e795b",
+ "devSn":"2014-1127-0940-3023",
+ "origKey":"87654322",
+ "wifiName":"test02-acc",
+ "newKey":"87654323"
+}

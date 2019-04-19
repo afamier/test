@@ -1,0 +1,6 @@
+/var/log/simsrv.log {
+        size 10M
+        rotate 15
+        missingok
+        create 640
+}

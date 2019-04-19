@@ -1,0 +1,18 @@
+{
+ "sn":"125",
+ "cmd":"SendNewSms",   
+ "token":"4e52bffc8bc620409d54dcd5b83fe920",
+ "spec_pkg":"L1-46001A",
+ "sms_list":[{
+	"sms_id":"1",
+	"number":"+8618507955885",
+	"content":"测试！",
+	"encode":"ASCII"
+},
+{
+	"sms_id":"2",
+	"number":"+8613049811550",
+	"content":"HTTP API test！哈哈",
+	"encode":"UNICODE"
+}]
+}

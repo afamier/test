@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<system version="1.0">
+	<param name="sys_uuid" value="1"/>
+	<param name="sys_alias" value="server01"/>
+	<param name="cloud_uuid" value="1"/>
+	<param name="sys_pub_ip" value="0.0.0.0"/>
+	<param name="stun_listen_eth" value="eth0"/>
+	<param name="stun_listen_2nd" value="null"/>
+	<param name="trans_listen_port" value="2020"/>
+	<param name="web_proxy_port" value="8080"/>
+	<param name="telnet_proxy_port" value="8090"/>
+	<param name="service_api_port" value="3030"/>
+	<param name="mysql_url" value="localhost"/>
+	<param name="mysql_port" value="3306"/>
+	<param name="mysql_db" value="simserver"/>
+	<param name="mysql_user" value="dinstar"/>
+	<param name="mysql_pwd" value="123456"/>
+	<param name="mysql_log_splits" value="180"/>
+	<param name="mysql_pmd_splits" value="90"/>
+	<param name="mysql_pre_splits" value="30"/>
+	<param name="prov_url" value="127.0.0.1" />
+	<param name="prov_user" value="ftpuser" />
+	<param name="prov_pwd" value="ftpuser123" />
+	<param name="dns_url01" value="127.0.0.1" />
+	<param name="dns_url02" value="127.0.0.1" />
+	<param name="dns_domain01" value="test01.com" />
+	<param name="dns_domain02" value="test02.com" />
+	<param name="telnet_max_connect" value="100" />
+	<param name="max_sms_queue_size" value="128" />
+</system>

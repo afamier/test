@@ -1,0 +1,10 @@
+{
+ "sn":"9",
+ "cmd":"SetRechRedirect",   
+ "token":"391817ce66f4a75dea9ce968f2989776",
+
+	"ssid":"AiU-6539",
+	"redirect":"0",
+	"rechPortal":"http:\\www.baidu.com",
+  "speedLimit":"256"
+}

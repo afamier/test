@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simsrv version="1.0" msg_type="request">
+    <header>
+        <param name="SN" value="0" />
+        <param name="Domain" value="mibox" />
+        <param name="User" value="apiuser" />
+        <param name="Cmd" value="SetMiboxInfo" />
+        <param name="Retries" value="0" />
+        <param name="Timeout" value="5000" />
+        <param name="Timestamp" value="NA" />
+        <param name="AuthInfo" value="NA" />
+    </header>
+    <SetMiboxInfo>
+        <param name="DeviceSn" value="2014-0423-1807-0001" />
+        <param name="AdminStatus" value="ENABLED" />
+        <param name="UserLevel" value="L1" />
+        <param name="UserType" value="BY_FLOW" />
+        <param name="LeftTimeMin" value="60" />
+        <param name="LeftFlowMB" value="-1" />
+        <param name="ExpiredTime" value="2015-12-31 23:59:59" />
+    </SetMiboxInfo>
+</simsrv>
